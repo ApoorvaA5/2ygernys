@@ -1,4 +1,5 @@
 import React from 'react';
+import Logo from '../assets/logo.png'; // Import the logo
 
 const Navbar = () => {
   return (
@@ -6,10 +7,11 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         {/* Logo Section */}
         <div className="flex items-center space-x-2">
-          <span className="text-3xl font-bold" style={{ color: '#00B4D8' }}>Synergy</span>
-          <div className="w-12 h-12 bg-gray-300 rounded-full">
-            {/* Placeholder for circular logo */}
-          </div>
+          <img 
+            src={Logo} 
+            alt="Synergy Logo" 
+            className="h-10 object-contain" // Ensure object-contain prevents cropping
+          />
         </div>
 
         {/* Navigation Links */}
@@ -30,9 +32,9 @@ const Navbar = () => {
         {/* Flags Section */}
         <div className="hidden md:flex items-center space-x-4">
           <div className="relative group">
-            <img 
-              src="https://cdn.britannica.com/33/4833-050-F6E415FE/Flag-United-States-of-America.jpg" 
-              alt="USA Flag" 
+            <img
+              src="https://cdn.britannica.com/33/4833-050-F6E415FE/Flag-United-States-of-America.jpg"
+              alt="USA Flag"
               className="w-8 h-5 object-cover"
             />
             <span className="absolute hidden group-hover:block text-sm bg-gray-700 text-white rounded p-1 mt-1 left-1/2 transform -translate-x-1/2">
@@ -40,9 +42,9 @@ const Navbar = () => {
             </span>
           </div>
           <div className="relative group">
-            <img 
-              src="https://cdn.britannica.com/66/96866-050-BBAE91CE/Flag-European-Union.jpg" 
-              alt="EU Flag" 
+            <img
+              src="https://cdn.britannica.com/66/96866-050-BBAE91CE/Flag-European-Union.jpg"
+              alt="EU Flag"
               className="w-8 h-5 object-cover"
             />
             <span className="absolute hidden group-hover:block text-sm bg-gray-700 text-white rounded p-1 mt-1 left-1/2 transform -translate-x-1/2">
@@ -50,9 +52,9 @@ const Navbar = () => {
             </span>
           </div>
           <div className="relative group">
-            <img 
-              src="https://cdn.britannica.com/68/7068-050-54679E29/Flag-Canada.jpg" 
-              alt="Canada Flag" 
+            <img
+              src="https://cdn.britannica.com/68/7068-050-54679E29/Flag-Canada.jpg"
+              alt="Canada Flag"
               className="w-8 h-5 object-cover"
             />
             <span className="absolute hidden group-hover:block text-sm bg-gray-700 text-white rounded p-1 mt-1 left-1/2 transform -translate-x-1/2">
@@ -60,9 +62,9 @@ const Navbar = () => {
             </span>
           </div>
           <div className="relative group">
-            <img 
-              src="https://cdn.britannica.com/29/22529-004-ED1907BE/Union-Flag-Cross-St-Andrew-of-George.jpg" 
-              alt="UK Flag" 
+            <img
+              src="https://cdn.britannica.com/29/22529-004-ED1907BE/Union-Flag-Cross-St-Andrew-of-George.jpg"
+              alt="UK Flag"
               className="w-8 h-5 object-cover"
             />
             <span className="absolute hidden group-hover:block text-sm bg-gray-700 text-white rounded p-1 mt-1 left-1/2 transform -translate-x-1/2">
@@ -83,4 +85,8 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
+
+
 
