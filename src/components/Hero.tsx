@@ -33,7 +33,7 @@ const Hero = () => {
   }, [images.length]);
 
   return (
-    <div className="relative h-[600px] overflow-hidden">
+    <div className="relative h-[90vh] overflow-hidden">
       <img
         src={images[currentIndex]}
         alt="Background"
@@ -57,3 +57,4 @@ const Hero = () => {
 };
 
 export default Hero;
+
