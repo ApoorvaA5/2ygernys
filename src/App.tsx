@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import IndustrySwiper from './components/IndustrySwiper';
 
+
 function App() {
   return (
     <div className="min-h-screen bg-gray-100">

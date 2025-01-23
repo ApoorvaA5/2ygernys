@@ -1,6 +1,7 @@
 import React from 'react';
 import Logo from '../assets/logo.png'; // Import the logo
 import IndiaVideo from '../assets/india.mp4'; // Import the India video
+import AboutUs from './AboutUs';
 
 const Navbar = () => {
   return (
@@ -25,7 +26,7 @@ const Navbar = () => {
         {/* Navigation Links */}
         <div className="hidden md:flex items-center space-x-8">
           <a href="#" className="text-white hover:text-[#00B4D8] transition-colors">Home</a>
-          <a href="#" className="text-white hover:text-[#00B4D8] transition-colors">About Us</a>
+          <a href="about" className="text-white hover:text-[#00B4D8] transition-colors">About Us</a>
           <div className="relative group">
             <a href="#" className="text-white hover:text-[#00B4D8] transition-colors flex items-center">
               Products
