@@ -42,7 +42,7 @@ const Hero = () => {
       <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50">
         <div className="max-w-7xl mx-auto h-full flex flex-col justify-center px-6">
           <h1 className="text-6xl md:text-7xl font-bold text-white mb-4">
-            <span className="text-[#00B4D8]">Synergy</span>
+            <span className="text-[#007FFF]">Synergy</span>
           </h1>
           <h2 className="text-4xl md:text-5xl font-semibold text-white mb-4">
             {headings[currentIndex]}

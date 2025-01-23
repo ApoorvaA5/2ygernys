@@ -1,17 +1,25 @@
 import React from 'react';
 import Logo from '../assets/logo.png'; // Import the logo
+import IndiaVideo from '../assets/india.mp4'; // Import the India video
 
 const Navbar = () => {
   return (
     <nav className="bg-black text-white py-4">
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         {/* Logo Section */}
-        <div className="flex items-center space-x-2">
-          <img 
-            src={Logo} 
-            alt="Synergy Logo" 
-            className="h-10 object-contain" // Ensure object-contain prevents cropping
+        <div className="flex items-center space-x-4">
+          <img
+            src={Logo}
+            alt="Synergy Logo"
+            className="h-10 object-contain"
           />
+          <video
+            src={IndiaVideo}
+            className="w-12 h-12 rounded-full object-cover"
+            autoPlay
+            muted
+            loop
+          ></video>
         </div>
 
         {/* Navigation Links */}
@@ -85,6 +93,7 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
 
 
 
