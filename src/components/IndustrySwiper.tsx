@@ -5,6 +5,7 @@ import { Pickaxe, Wrench, Trees, Stethoscope, Scissors, Gauge, Goal as Valve, Pa
 
 import 'swiper/css';
 import 'swiper/css/navigation';
+import'./swiper.css';
 
 const industries = [
   { icon: Pickaxe, name: 'Mining' },
@@ -25,7 +26,17 @@ const IndustrySwiper = () => {
   return (
     <div className="bg-white py-16">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center mb-12">Industries We Serve</h2>
+        <div className="text-center mb-12 relative">
+          <h2 className="text-4xl font-bold inline-block relative">
+            <span className="bg-gradient-to-r from-[#00B4D8] to-[#0077B6] bg-clip-text text-transparent 
+              animate-gradient">
+              Industries We Serve
+            </span>
+            <div className="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-24 h-1 
+              bg-gradient-to-r from-[#00B4D8] to-[#0077B6] rounded-full 
+              animate-pulse"></div>
+          </h2>
+        </div>
         <Swiper
           modules={[Navigation, Autoplay]}
           spaceBetween={30}
@@ -50,11 +61,15 @@ const IndustrySwiper = () => {
         >
           {industries.map((industry, index) => (
             <SwiperSlide key={index}>
-              <div className="flex flex-col items-center p-6 cursor-pointer group">
-                <div className="w-24 h-24 rounded-full bg-gray-100 flex items-center justify-center mb-4 group-hover:bg-[#00B4D8] transition-colors duration-300">
+              <div className="flex flex-col items-center p-6 cursor-pointer group transform transition-all duration-300 hover:scale-105">
+                <div className="w-24 h-24 rounded-full bg-gray-100 flex items-center justify-center mb-4 
+                  group-hover:bg-gradient-to-r from-[#007FFF] to-[#0077B6] 
+                  transition-all duration-300 shadow-lg group-hover:shadow-[#007FFF]/20">
                   <industry.icon className="w-12 h-12 text-gray-600 group-hover:text-white transition-colors duration-300" />
                 </div>
-                <span className="text-sm font-medium text-center text-gray-700 group-hover:text-[#00B4D8] transition-colors duration-300">
+                <span className="text-sm font-medium text-center text-gray-700 
+                  group-hover:text-#007FFF] transition-colors duration-300
+                  group-hover:font-semibold">
                   {industry.name}
                 </span>
               </div>
