@@ -1,11 +1,9 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Autoplay } from 'swiper/modules';
+import { Autoplay } from 'swiper/modules';
 import { Pickaxe, Wrench, Trees, Stethoscope, Scissors, Gauge, Goal as Valve, Package, Lightbulb, Wind, Cylinder, Train } from 'lucide-react';
 
 import 'swiper/css';
-import 'swiper/css/navigation';
-import'./swiper.css';
 
 const industries = [
   { icon: Pickaxe, name: 'Mining' },
@@ -24,24 +22,12 @@ const industries = [
 
 const IndustrySwiper = () => {
   return (
-    <div className="bg-white py-16">
+    <div className="bg-white">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-12 relative">
-          <h2 className="text-4xl font-bold inline-block relative">
-            <span className="bg-gradient-to-r from-[#00B4D8] to-[#0077B6] bg-clip-text text-transparent 
-              animate-gradient">
-              Industries We Serve
-            </span>
-            <div className="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-24 h-1 
-              bg-gradient-to-r from-[#00B4D8] to-[#0077B6] rounded-full 
-              animate-pulse"></div>
-          </h2>
-        </div>
         <Swiper
-          modules={[Navigation, Autoplay]}
+          modules={[Autoplay]}
           spaceBetween={30}
           slidesPerView={2}
-          navigation
           autoplay={{
             delay: 3000,
             disableOnInteraction: false,
@@ -57,7 +43,7 @@ const IndustrySwiper = () => {
               slidesPerView: 6,
             },
           }}
-          className="industry-swiper"
+          className="industry-swiper w-full" // Ensure full width
         >
           {industries.map((industry, index) => (
             <SwiperSlide key={index}>
@@ -68,7 +54,7 @@ const IndustrySwiper = () => {
                   <industry.icon className="w-12 h-12 text-gray-600 group-hover:text-white transition-colors duration-300" />
                 </div>
                 <span className="text-sm font-medium text-center text-gray-700 
-                  group-hover:text-#007FFF] transition-colors duration-300
+                  group-hover:text-[#007FFF] transition-colors duration-300
                   group-hover:font-semibold">
                   {industry.name}
                 </span>
@@ -82,3 +68,5 @@ const IndustrySwiper = () => {
 };
 
 export default IndustrySwiper;
+
+

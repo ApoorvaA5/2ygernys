@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Logo from '../assets/logo.png'; // Import the logo
 import IndiaVideo from '../assets/india.mp4'; // Import the India video
 
@@ -8,11 +9,9 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         {/* Logo Section */}
         <div className="flex items-center space-x-4">
-          <img
-            src={Logo}
-            alt="Synergy Logo"
-            className="h-10 object-contain"
-          />
+          <Link to="/">
+            <img src={Logo} alt="Synergy Logo" className="h-10 object-contain" />
+          </Link>
           <video
             src={IndiaVideo}
             className="w-12 h-12 rounded-full object-cover"
@@ -24,17 +23,24 @@ const Navbar = () => {
 
         {/* Navigation Links */}
         <div className="hidden md:flex items-center space-x-8">
-          <a href="#" className="text-white hover:text-[#00B4D8] transition-colors">Home</a>
-          <a href="#" className="text-white hover:text-[#00B4D8] transition-colors">About Us</a>
-          <div className="relative group">
-            <a href="#" className="text-white hover:text-[#00B4D8] transition-colors flex items-center">
-              Products
-              <span className="ml-1">▼</span>
-            </a>
-          </div>
-          <a href="#" className="text-white hover:text-[#00B4D8] transition-colors">Solutions</a>
-          <a href="#" className="text-white hover:text-[#00B4D8] transition-colors">Contact Us</a>
-          <a href="#" className="text-white hover:text-[#00B4D8] transition-colors">Blog</a>
+          <Link to="/" className="text-white hover:text-[#00B4D8] transition-colors">
+            Home
+          </Link>
+          <Link to="/about" className="text-white hover:text-[#00B4D8] transition-colors">
+            About Us
+          </Link>
+          <Link to="/products" className="text-white hover:text-[#00B4D8] transition-colors">
+            Products
+          </Link>
+          <Link to="/solutions" className="text-white hover:text-[#00B4D8] transition-colors">
+            Solutions
+          </Link>
+          <Link to="/contact" className="text-white hover:text-[#00B4D8] transition-colors">
+            Contact Us
+          </Link>
+          <Link to="/blog" className="text-white hover:text-[#00B4D8] transition-colors">
+            Blog
+          </Link>
         </div>
 
         {/* Flags Section */}
@@ -93,6 +99,7 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
 
 
 
