@@ -5,6 +5,7 @@ import manufacturing from '../assets/manufacturing.jpg';
 import attention from '../assets/attention.jpg';
 import solution from '../assets/solutions.jpg';
 
+
 const Hero = () => {
   const images = [
     locallyGlobal,
@@ -50,9 +51,11 @@ const Hero = () => {
           <p className="text-xl md:text-2xl text-gray-200 max-w-2xl">
             Precision Engineering Solutions for Tomorrow's Challenges
           </p>
+         
         </div>
       </div>
     </div>
+    
   );
 };
 
