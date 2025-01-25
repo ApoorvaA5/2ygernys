@@ -1,44 +1,55 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
-import { Building2, Calculator as Excavator, Car, Pipette as Pipe, Cylinder, Train, Cog } from 'lucide-react';
+import { Calculator as Excavator,  Pipette as Pipe, Cog, Pipette, PipetteIcon,Building2Icon, CarFrontIcon, TrainFrontTunnelIcon, TrainTrackIcon, TrainFrontIcon, TrainFrontTunnel, CarTaxiFrontIcon } from 'lucide-react';
 import 'swiper/css';
+import { PiCylinderBold, PiFileJsBold, PiPenNibStraight } from 'react-icons/pi';
+import { WiDaySnowThunderstorm } from 'react-icons/wi';
+import { BiBuildingHouse, BiBuildings } from 'react-icons/bi';
+import { HiMiniFingerPrint } from 'react-icons/hi2';
+import { MdDining, MdOutlineWaterDamage } from 'react-icons/md';
+import { GiMiningHelmet, GiWaterDivinerStick, GiWindTurbine } from 'react-icons/gi';
+import { FcAutomotive } from 'react-icons/fc';
+import { TbBatteryAutomotive, TbBatteryAutomotiveFilled } from 'react-icons/tb';
+import { SiJcb } from 'react-icons/si';
+import { FaCcJcb, FaPumpMedical } from 'react-icons/fa';
+import { LiaCcJcb } from 'react-icons/lia';
 
 const industries = [
   { 
-    icon: Building2,
+    icon: BiBuildings,
     name: 'CONSTRUCTION',
-    iconSize: 24
+    iconSize: 32
   },
   { 
-    icon: Excavator,
+    icon:GiMiningHelmet,
     name: 'MINING',
-    iconSize: 24
+    iconSize: 32
   },
   { 
-    icon: Car,
+    icon:CarTaxiFrontIcon,
     name: 'AUTOMOTIVE',
-    iconSize: 24
+    iconSize: 32
   },
   { 
-    icon: Pipe,
+    icon:MdOutlineWaterDamage,
     name: 'WATERWORKS',
-    iconSize: 24
+    iconSize: 32
   },
   { 
-    icon: Cylinder,
+    icon: FaPumpMedical,
     name: 'HYDRAULICS',
-    iconSize: 24
+    iconSize: 32
   },
   { 
-    icon: Train,
+    icon: TrainFrontTunnel,
     name: 'RAIL',
-    iconSize: 24
+    iconSize: 32
   },
   { 
     icon: Cog,
     name: 'OEMS',
-    iconSize: 24
+    iconSize: 32
   }
 ];
 const IndustrySwiper = () => {
