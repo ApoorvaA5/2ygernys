@@ -41,14 +41,13 @@ const industries = [
     iconSize: 24
   }
 ];
-
 const IndustrySwiper = () => {
   return (
-    <div className="bg-white py-8">
-      <div className="max-w-7xl mx-auto px-6">
+    <div className="bg-white -mt-8">
+      <div className="max-w-7xl mx-auto px-4">
         <Swiper
           modules={[Autoplay]}
-          spaceBetween={15} // Reduced spaceBetween to decrease the space between icons
+          spaceBetween={0} // No space between slides
           slidesPerView={2}
           autoplay={{
             delay: 3000,
@@ -62,23 +61,25 @@ const IndustrySwiper = () => {
               slidesPerView: 4,
             },
             1024: {
-              slidesPerView: 6, // Adjusted to show 6 items on larger screens
+              slidesPerView: 6,
             },
           }}
-          className="industry-swiper w-full"
+          className="industry-swiper w-full !p-0"
         >
           {industries.map((industry, index) => (
             <SwiperSlide key={index}>
-              <div className="flex flex-col items-center p-3 cursor-pointer group">
-                <div className="w-24 h-24 rounded-full bg-[#f8f8f8] flex flex-col items-center justify-center 
-                  transition-all duration-300 hover:shadow-lg">
-                  <industry.icon 
-                    className="text-gray-600 mb-2 group-hover:text-blue-600 
-                    transition-colors duration-300" 
+              <div className="flex flex-col items-center p-1 cursor-pointer group">
+                <div
+                  className="w-20 h-20 rounded-full bg-[#f8f8f8] flex flex-col items-center justify-center 
+                  transition-all duration-300 hover:shadow-lg"
+                >
+                  <industry.icon
+                    className="text-gray-600 mb-1 group-hover:text-blue-600 
+                    transition-colors duration-300"
                     size={industry.iconSize}
                     strokeWidth={1.5}
                   />
-                  <span className="text-[12px] font-medium text-gray-600 text-center tracking-wider">
+                  <span className="text-[10px] font-medium text-gray-600 text-center tracking-wider">
                     {industry.name}
                   </span>
                 </div>
@@ -90,6 +91,7 @@ const IndustrySwiper = () => {
     </div>
   );
 };
+
 
 export default IndustrySwiper;
 
