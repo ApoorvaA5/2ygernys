@@ -5,11 +5,12 @@ import GlobalPresence from '../components/GlobalPresence';
 
 const Home = () => {
   return (
-    <>
-      <Hero />
-      <IndustrySwiper />
-      <GlobalPresence />
-    </>
+    
+        <div className="space-y-0"> {/* Removes vertical spacing between components */}
+          <Hero />
+          <IndustrySwiper />
+          <GlobalPresence />
+        </div>
   );
 };
 
