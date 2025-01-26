@@ -8,6 +8,7 @@ import Solutions from './pages/Solutions';
 import Contact from './pages/Contact';
 import Blog from './pages/Blog';
 
+
 function App() {
   return (
     <div className="min-h-screen bg-gray-100">
