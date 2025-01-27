@@ -14,51 +14,61 @@ import UEE from '../assets/UEE.png';
 
 const clients = [
   {
+    id: "1",
     name: "Manufacturing Technology Inc",
     logo: Manufacturing,
     place: "UK"
   },
   {
+    id: "2",
     name: "Phoenix",
     logo: Phoenix,
     place: "USA"
   },
   {
+    id: "3",
     name: "Mcdeniel",
     logo: Mcdeniel,
     place: "USA"
   },
   {
+    id: "4",
     name: "Bradken",
     logo: bradken,
     place: "USA"
   },
   {
+    id: "5",
     name: "T & s",
     logo: TandS,
     place: "USA"
   },
   {
+    id: "6",
     name: "Red valve",
     logo: Red,
     place: "USA"
   },
   {
+    id: "7",
     name: "Sullivan Process Control",
     logo: SPC,
     place: "USA"
   },
   {
+    id: "8",
     name: "Stanley Black and Decker",
     logo: Stanley,
     place: "USA"
   },
   {
+    id: "9",
     name: "Unicrest",
     logo: unicrest,
     place: "Australia"
   },
   {
+    id: "10",
     name: "UEE",
     logo: UEE,
     place: "Canada"
@@ -98,12 +108,12 @@ const ClientSwiper = () => {
           }}
           className="client-swiper"
         >
-          {clients.map((client, index) => (
-            <SwiperSlide key={index}>
+          {clients.map((client) => (
+            <SwiperSlide key={client.id}>
               <div 
                 className="flex flex-col items-center justify-center h-32 transition-all duration-300 transform hover:scale-110"
                 style={{
-                  animation: `fadeSlideUp 0.5s ease-out ${index * 0.1}s forwards`,
+                  animation: `fadeSlideUp 0.5s ease-out forwards`,
                 }}
               >
                 <img 
@@ -124,5 +134,6 @@ const ClientSwiper = () => {
 };
 
 export default ClientSwiper;
+
 
 
