@@ -34,9 +34,10 @@
     "vite": "^5.4.2",
     "vite-plugin-svgr": "^4.3.0"
   },
-  "engines": {
-    "node": "16.x"
-  },
+"engines": {
+  "node": "22.x"
+},
+
   "vercel": {
     "builds": [
       {
