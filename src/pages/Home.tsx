@@ -3,7 +3,8 @@ import Hero from '../components/Hero';
 import IndustrySwiper from '../components/IndustrySwiper';
 import GlobalPresence from '../components/GlobalPresence';
 import IntegratedManufacturing from '../components/IntegratedManufacturing';
-import PremiumQuality from '../components/PremiumQuality'
+import PremiumQuality from '../components/PremiumQuality';
+import Performance from '../components/Performance';
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
           <GlobalPresence />
           <IntegratedManufacturing/>
           <PremiumQuality/>
+          <Performance/>
         </div>
   );
 };
