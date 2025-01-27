@@ -6,7 +6,7 @@ import IntegratedManufacturing from '../components/IntegratedManufacturing';
 import PremiumQuality from '../components/PremiumQuality';
 import SourcingAndProducts from '../components/SourcingAndProducts';
 import Performance from '../components/Performance';
-
+import  ClientSwiper from '../components/ClientSwiper';
 
 const Home = () => {
   return (
@@ -18,7 +18,7 @@ const Home = () => {
       <PremiumQuality />
     <SourcingAndProducts/>
       <Performance />
-    
+      < ClientSwiper/>
     </div>
   );
 };
