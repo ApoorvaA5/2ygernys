@@ -48,7 +48,7 @@ const AboutUs = () => {
     <div className="bg-gradient-to-b from-gray-50 to-white text-zinc-950">
       {/* Hero Section */}
       <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://img.freepik.com/free-vector/isometric-lock-padlock-keyhole-cyber-security-information-network-protection-future-cyber-technology-web-services-business-internet-project_587448-1060.jpg')] bg-cover bg-center bg-fixed opacity-50" />
+        <div className="absolute inset-0 bg-[url('https://img.freepik.com/free-vector/isometric-lock-padlock-keyhole-cyber-security-information-network-protection-future-cyber-technology-web-services-business-internet-project_587448-1060.jpg')] bg-cover bg-center bg-fixed opacity-80" />
         <div className="relative z-10 text-center space-y-8 max-w-6xl mx-auto px-4">
           <h1 className="text-xl font-black bg-clip-text text-transparent bg-white  animate-fade-in">
             {/* ABOUT US */}
@@ -74,6 +74,7 @@ const AboutUs = () => {
     At Synergy, our priority is to truly understand the expectations of global engineering OEMs and translate them into our key goals. We focus on delivering quality, value, and dependability in every project.
   </p>
 </div> */}
+
 
 {/* Core Values Section */}
 {/* <div className="grid md:grid-cols-3 gap-12 mb-16 px-6">
@@ -186,10 +187,10 @@ const AboutUs = () => {
 <div className="bg-gradient-to-b from-gray-50 to-white text-gray-800">
   {/* Three Card Section */}
   <section className="py-6 px-4">
-    <div className="max-w-6xl mx-auto">
+    <div className="max-w-6xl px-8 mb-8 mx-auto">
       <div className="text-center mb-12">
-        <h2 className="text-4xl font-bold text-gray-900">
-          Core Values
+        <h2 className="text-4xl font-extrabold text-slate-950">
+          CORE VALUES
         </h2>
         <p className="text-lg text-gray-600 mt-2">
           Our guiding principles that drive success and innovation.
@@ -259,7 +260,7 @@ const AboutUs = () => {
 
 
 {/* WHO ARE WE SECTION */}
-    <section className="bg-gradient-to-r from-blue-50 to-purple-50 px-6 lg:px-20 py-24">
+    <section className="bg-gradient-to-r from-blue-50 to-purple-50 px-6 lg:px-20 py-12">
   <div className="max-w-6xl mx-auto">
     {/* White Container with Flex Layout */}
     <div className="flex flex-col lg:flex-row bg-white p-8 rounded-2xl shadow-xl items-center gap-8 lg:gap-16">
@@ -274,7 +275,7 @@ const AboutUs = () => {
 
       {/* Right Side - Text */}
       <div className="lg:w-1/2 space-y-6">
-        <h2 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r text-zinc-950 from-blue-600 to-purple-600">
+        <h2 className="text-4xl font-extrabold text-slate-950">
           WHO ARE WE?
         </h2>
         <p className="text-lg leading-relaxed text-gray-700">
@@ -286,12 +287,12 @@ const AboutUs = () => {
 </section>
 
      {/* History Timeline */}
-      <section className="px-6 lg:px-20 py-24">
-        <h2 className="text-4xl font-bold text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r  text-stone-950 from-blue-600 to-purple-600">
+      <section className="px-6 lg:px-20 ">
+        <h2 className="text-4xl text-center py-8 font-extrabold text-slate-950">
           OUR HISTORY
         </h2>
         <div className="relative">
-          <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-blue-900 to-purple-900" />
+          <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-sky-400absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-blue-600 to-purple-600" />
           <div className="-space-y-4">
             {[ 
               { year: "2005", event: "Founded as a consulting company", icon: Building },
@@ -312,10 +313,10 @@ const AboutUs = () => {
                 className={`flex items-center ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'} animate-on-scroll`}
               >
                 <div className={`w-1/2 ${index % 2 === 0 ? 'pr-12 text-right' : 'pl-12 text-left'}`}>
-                  <div className="bg-stone-300 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                  <div className="bg-slate-100 p-6 rounded-xl shadow-lg hover:shadow-sky-600 transition-all duration-300">
                     <div className="flex items-center space-x-4 mb-2">
-                      <item.icon className="w-6 h-6 text-blue-900" />
-                      <span className="text-xl font-extrabold ">{item.year}</span>
+                      <item.icon className="w-6 h-6 text-blue-600" />
+                      <span className="text-xl font-extrabold text-blue-600">{item.year}</span>
                     </div>
                     <p className="text-lg text-justify">{item.event}</p>
                   </div>
@@ -331,27 +332,27 @@ const AboutUs = () => {
       </section>
 
       {/* CEO Talk Section */}
-      <section className="bg-gradient-to-b from-blue-50 to-purple-50 py-16 px-6">
+      <section className="bg-gradient-to-b from-blue-50 to-purple-50 mt-12 px-6">
   <div className="container mx-auto max-w-6xl">
     {/* Section Title */}
-    <h2 className="text-4xl font-extrabold text-center mb-8 bg-clip-text text-transparent text-slate-950 bg-gradient-to-r from-blue-600 to-purple-600">
-      A Word from Our CEO
+    <h2 className="text-4xl text-center  py-8 font-extrabold text-slate-950">
+       WORDS FROM OUR CEO
     </h2>
 
     {/* Content */}
-    <div className="flex flex-col lg:flex-row items-center gap-12">
+    <div className="flex px-6 flex-col lg:flex-row items-center gap-12">
       {/* Text Section */}
       <div className="lg:w-1/2 text-center lg:text-left space-y-6">
-        <h3 className="text-3xl font-bold text-gray-800">
+        <h3 className="text-3xl font-bold text-gray-900">
           A Vision for Excellence
         </h3>
-        <p className="text-lg text-gray-600 leading-relaxed">
+        <p className="text-lg text-gray-800 leading-relaxed">
           Listen to our CEO share his vision for Synergy, our commitment to excellence in manufacturing, and the importance of fostering global partnerships. At Synergy, we strive to deliver unmatched quality and value in all that we do.
         </p>
       </div>
 
       {/* Video Section */}
-      <div className="lg:w-1/2 flex justify-center">
+      <div className="lg:w-1/2 py-12 flex justify-center">
         <div className="w-full max-w-xl">
           <video
             controls
@@ -371,12 +372,12 @@ const AboutUs = () => {
       {/* Leadership Section */}
       <section className="container-2xl mx-auto px-6 py-10">
   {/* Section Title */}
-  <h2 className="text-5xl font-extrabold text-center mb-10 bg-clip-text text-transparent text-gray-950 bg-gradient-to-r from-blue-600 to-purple-600 tracking-wide">
-    Our Leadership
+  <h2 className="text-5xl font-extrabold text-center mb-10  text-black tracking-wide">
+    OUR LEADERSHIP
   </h2>
 
   {/* Leadership Cards */}
-  <div className="grid lg:grid-row-2 gap-16">
+  <div className="grid lg:grid-row-2 px-12 gap-16">
     {[
       {
         name: "MR. KETAN BC",
@@ -414,7 +415,7 @@ const AboutUs = () => {
           {/* Content */}
           <div className="flex-1">
             <h3 className="text-3xl font-bold text-gray-800 mb-3">{leader.name}</h3>
-            <p className="text-blue-600 text-lg font-semibold mb-4">{leader.role}</p>
+            <p className="text-sky-600 text-lg font-semibold mb-4">{leader.role}</p>
             <p className="text-gray-700 text-base leading-relaxed mb-6">
               {leader.description}
             </p>
